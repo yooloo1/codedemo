@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.shopping.ShoppingFragment" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <include
+            android:id="@+id/includeLogin"
+            layout="@layout/login_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLoginSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+        <include
+            android:id="@+id/includeLoginSuccess"
+            layout="@layout/login_success_layout" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <ImageButton
+        android:id="@+id/imageButtonPhoto"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/default_photo" />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/sharp_edit"
+        android:hint="@string/searchHint"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/imageButtonShopping"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/shopping2"
+        android:background="@color/white"
+        android:scaleType="fitEnd" />
+
+
+</LinearLayout>

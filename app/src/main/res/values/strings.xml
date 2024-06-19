@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">文房四宝</string>
+    <string name="title_goods">商品</string>
+    <string name="title_shopping">购物车</string>
+    <string name="title_person">个人中心</string>
+    <string name="searchHint">请输入商品名称</string>
+</resources>

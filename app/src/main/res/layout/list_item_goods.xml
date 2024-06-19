@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewPreview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="@color/white"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/default_goods" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textViewGoodsName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="張小鳳狼毫毛笔"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewGoodsTags"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/text_view_tags"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="毛笔"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="100.00"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonAdd"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/shopping_add" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
